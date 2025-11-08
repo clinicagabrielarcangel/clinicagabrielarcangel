@@ -47,12 +47,12 @@ export function LocaleSwitcher ({
           title={title}
         >
           <LanguagesIcon
-            className='icon stroke-muted-foreground group-hover:stroke-foreground'
+            className='icon'
             aria-hidden
           />
           {withSet && (
             <span
-              className='title font-bold text-sm tracking-wide text-muted-foreground uppercase group-hover:text-foreground'
+              className='title font-bold text-sm tracking-wide uppercase'
               aria-hidden
             >
               {withSet === '1'
@@ -82,7 +82,7 @@ export function LocaleSwitcher ({
                 <div className='flex items-center gap-2'>
                   <div
                     className={cn(
-                      'size-5 flex items-center justify-center bg-muted border rounded-sm',
+                      'size-5 flex items-center justify-center bg-muted border rounded-md',
                       isActive && '[&>span]:text-foreground'
                     )}
                   >

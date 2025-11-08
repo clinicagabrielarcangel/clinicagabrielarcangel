@@ -20,7 +20,7 @@ const config: Config = {
     extend: {
       screens: {
         xxs: '360px',
-        xs: '480px',
+        xs: '500px',
         '3xl': '1680px'
       },
       colors: {
@@ -83,6 +83,9 @@ const config: Config = {
       fontFamily: {
         header: ['var(--font-header)', ...fontFamily.sans],
         sans: ['var(--font-sans)', ...fontFamily.sans]
+      },
+      fontSize: {
+        h2: 'var(--font-heading-2)'
       }
     },
     keyframes: {
@@ -111,9 +114,15 @@ const config: Config = {
           opacity: '1',
           transform: 'translateY(0)'
         }
+      },
+      scroll: {
+        to: {
+          transform: 'translate(calc(-50% - 0.5rem))'
+        }
       }
     },
     animation: {
+      scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
       'fade-up': 'fade-up 0.5s ease-out',
       'fade-down': 'fade-down 0.5s ease-out'
     }

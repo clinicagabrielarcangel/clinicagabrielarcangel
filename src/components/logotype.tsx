@@ -58,7 +58,7 @@ export function Logomark ({ className, ...props }: IconProps) {
   return (
     <Link href='/'>
       <LogomarkIcon
-        className={cn('size-8', className)}
+        className={cn('h-9 w-auto', className)}
         title={title}
         {...props}
       />
@@ -73,7 +73,7 @@ export function Logotype ({ className, ...props }: IconProps) {
   return (
     <Link href='/'>
       <LogotypeIcon
-        className={cn('h-8 w-auto', className)}
+        className={cn('h-9 w-auto', className)}
         title={title}
         {...props}
       />

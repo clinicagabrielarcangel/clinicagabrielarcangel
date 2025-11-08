@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+    /* Colors */
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
@@ -37,6 +38,8 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Fonts */
+    --font-heading-2: clamp(25px, 1.563rem + ((1vw - 3.9px) * 1.333), 39px);
   }
 
   .dark {
@@ -86,10 +89,8 @@
 }
 
 @layer utilities {
-  .m-block {
-    margin-block: 1em;
-    /* fallback */
-    margin-block: 1lh;
+  .heading {
+    @apply font-header leading-[1.2] tracking-tighter antialiased;
   }
 }
 

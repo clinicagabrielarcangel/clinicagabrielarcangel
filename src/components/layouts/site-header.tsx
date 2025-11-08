@@ -5,11 +5,11 @@ import { Logomark, Logotype } from '@/components/logotype'
 
 export function SiteHeader () {
   return (
-    <header className='sticky top-0 z-50 w-full bg-background'>
+    <header className='sticky top-0 z-50 w-full bg-[#fcf7f11a] backdrop-blur-xl'>
       <div className='container flex h-20 items-center'>
         <div className='flex items-center gap-x-2'>
-          <Logotype className='h-9 hidden xs:block' />
-          <Logomark className='size-11 block xs:hidden' />
+          <Logotype className='hidden xs:block' />
+          <Logomark className='block xs:hidden' />
         </div>
         <div className='flex flex-1 items-center justify-end gap-x-2'>
           <div className='flex items-center gap-x-1'>
@@ -24,7 +24,7 @@ export function SiteHeader () {
             />
           </div>
           <CallToAction
-            className='animate-fade-down'
+            className='animate-fade-down uppercase'
             style={{ animationDelay: '0.20s', animationFillMode: 'both' }}
             to='contact'
           />
