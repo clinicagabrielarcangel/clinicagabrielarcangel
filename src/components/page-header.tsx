@@ -74,7 +74,7 @@ const descriptionVariants = cva(
     variants: {
       size: {
         default: 'text-lg lg:text-xl',
-        sm: 'text-base lg:text-lg',
+        sm: 'lg:text-lg',
         lg: 'text-xl lg:text-2xl'
       }
     },

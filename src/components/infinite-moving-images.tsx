@@ -91,7 +91,7 @@ export const InfiniteMovingImages = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          ' flex min-w-full shrink-0 gap-4 py-[72px] w-max flex-nowrap',
+          ' flex min-w-full shrink-0 gap-4 py-20 w-max flex-nowrap',
           start && 'animate-scroll ',
           pauseOnHover && 'hover:[animation-play-state:paused]'
         )}

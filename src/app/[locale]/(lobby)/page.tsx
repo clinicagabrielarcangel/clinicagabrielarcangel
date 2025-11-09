@@ -68,14 +68,14 @@ export default function LobbyPage () {
             withPadding
           >
             <PageHeaderHeading
-              className='animate-fade-up text-white'
+              className='animate-fade-up text-white md:text-foreground'
               style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
               size='lg'
             >
               {t('pageHeaderTitle')}
             </PageHeaderHeading>
             <PageHeaderDescription
-              className='animate-fade-up text-white'
+              className='animate-fade-up text-white md:text-foreground'
               style={{ animationDelay: '0.3s', animationFillMode: 'both' }}
               size='lg'
             >
@@ -93,9 +93,9 @@ export default function LobbyPage () {
             </PageActions>
           </PageHeader>
         </Shell>
-        <div className='absolute inset-0 overflow-hidden z-0'>
+        <div className='w-full md:w-1/2 absolute top-0 bottom-0 pt-20 right-0 overflow-hidden z-0'>
           <video
-            className='w-full h-full object-cover relative'
+            className='size-full object-cover relative'
             width={1920}
             height={1080}
             controls={false}
@@ -130,7 +130,7 @@ export default function LobbyPage () {
         </section>
       </Shell>
       <section className='border-y'>
-        <div className='text-muted-foreground text-center font-medium uppercase text-sm pt-4'>
+        <div className='text-muted-foreground text-center font-semibold uppercase text-sm tracking-wide pt-4'>
           {t('certifications')}
         </div>
         <div className='flex w-full'>
