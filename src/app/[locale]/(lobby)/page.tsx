@@ -1,4 +1,4 @@
-// import Image from 'next/image'
+import Image from 'next/image'
 import { Link } from '@/i18n/routing'
 import { useTranslations } from 'next-intl'
 import { ArrowRightIcon } from 'lucide-react'
@@ -68,14 +68,14 @@ export default function LobbyPage () {
             withPadding
           >
             <PageHeaderHeading
-              className='animate-fade-up text-white md:text-foreground'
+              className='animate-fade-up text-white'
               style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
               size='lg'
             >
               {t('pageHeaderTitle')}
             </PageHeaderHeading>
             <PageHeaderDescription
-              className='animate-fade-up text-white md:text-foreground'
+              className='animate-fade-up text-white'
               style={{ animationDelay: '0.3s', animationFillMode: 'both' }}
               size='lg'
             >
@@ -93,7 +93,7 @@ export default function LobbyPage () {
             </PageActions>
           </PageHeader>
         </Shell>
-        <div className='w-full md:w-1/2 absolute top-0 bottom-0 pt-20 right-0 overflow-hidden z-0'>
+        <div className='absolute inset-0 pt-20 right-0 overflow-hidden z-0'>
           <video
             className='size-full object-cover relative'
             width={1920}
@@ -137,6 +137,27 @@ export default function LobbyPage () {
           <InfiniteMovingImages
             items={certification}
             speed='slow'
+          />
+        </div>
+      </section>
+      <section>
+        <div>
+          <h2 className='font-header text-h3 text-balance heading'>
+            Lorem ipsum dolor sit amet consetratum
+          </h2>
+          <p className='text-md paragraph'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis similique qui, quisquam iure et at omnis
+            nihil deleniti eum exercitationem iusto ut temporibus vel architecto soluta vitae labore, ipsa accusantium!
+          </p>
+        </div>
+        <div>
+          <Image
+            src=''
+            alt=''
+            width={1024}
+            height={1024}
+            sizes='(max-width: 744px) 100vw, (max-width: 1280px) 50vw, 500px'
+            loading='lazy'
           />
         </div>
       </section>

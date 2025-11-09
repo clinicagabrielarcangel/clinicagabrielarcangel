@@ -85,7 +85,9 @@ const config: Config = {
         sans: ['var(--font-sans)', ...fontFamily.sans]
       },
       fontSize: {
-        h2: 'var(--font-heading-2)'
+        h2: 'var(--font-heading-2)',
+        h3: 'var(--font-heading-3)',
+        md: 'var(--font-size-medium)'
       }
     },
     keyframes: {

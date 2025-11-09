@@ -40,6 +40,8 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
     /* Fonts */
     --font-heading-2: clamp(25px, 1.563rem + ((1vw - 3.9px) * 1.333), 39px);
+    --font-heading-3: clamp(31px, 1.938rem + ((1vw - 3.9px) * 1.714), 49px);
+    --font-size-medium: clamp(18px, 1.125rem + ((1vw - 3.9px) * 0.19), 20px);
   }
 
   .dark {
@@ -91,6 +93,10 @@
 @layer utilities {
   .heading {
     @apply font-header leading-[1.2] tracking-tighter antialiased;
+  }
+
+  .paragraph {
+    @apply leading-[1.4] tracking-tighter;
   }
 }
 
